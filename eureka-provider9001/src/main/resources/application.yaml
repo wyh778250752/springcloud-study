@@ -19,3 +19,6 @@ eureka:
       defaultZone: http://eureka-server1:7001/eureka,http://eureka-server2:7002/eureka
     fetch-registry: true
     register-with-eureka: true
+  instance:
+    instance-id: adress9001
+    prefer-ip-address: true
