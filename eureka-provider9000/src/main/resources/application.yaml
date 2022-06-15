@@ -1,0 +1,21 @@
+server:
+  port: 9000
+spring:
+  profiles:
+    active: jdbc
+  application:
+    name: eureka-provider
+
+mybatis-plus:
+  type-aliases-package: com.wuyuhui.eurekaprovider9000.pojo
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+
+eureka:
+  client:
+    service-url:
+#      defaultZone: http://localhost:7000/eureka/
+       defaultZone: http://eureka-server1:7001/eureka,http://eureka-server2:7002/eureka
+    fetch-registry: true
+    register-with-eureka: true
