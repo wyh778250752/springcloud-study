@@ -40,7 +40,7 @@ public class AddressController {
         if(one != null) {
             return new CommonResult(200,"查询成功 服务端口:serverPort:" + serverPort,one);
         }else {
-            return new CommonResult(444,"查询失败 服务端口:serverPort:" + serverPort,null);
+            return new CommonResult(444,"查询失败",null);
         }
     }
 
