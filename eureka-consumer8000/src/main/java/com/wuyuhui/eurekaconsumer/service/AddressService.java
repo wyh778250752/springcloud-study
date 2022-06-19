@@ -4,6 +4,6 @@ import com.wuyuhui.common.pojo.CommonResult;
 
 public interface AddressService {
 
-    public CommonResult queryAddressById(int id);
+     CommonResult queryAddressById(int id);
 
 }

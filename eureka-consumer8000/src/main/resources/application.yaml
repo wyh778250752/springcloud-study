@@ -5,15 +5,14 @@ spring:
     name: eureka-consumer # 服务名称
 eureka:
   client:
-    register-with-eureka: false # 是将自己注册到eureka集群
+    register-with-eureka: true # 是将自己注册到eureka集群
     fetch-registry: true # 是否从eureka获取注册的服务信息
     service-url:
       #      defaultZone: http://localhost:7000/eureka/
       defaultZone: http://eureka-server1:7001/eureka,http://eureka-server2:7002/eureka # 集群的URL
   instance:
     instance-id: consumer8000 # 部署服务的别名
-    prefer-ip-address: true # 是否展现具体的端口号，ip地址等信息
-
+    prefer-ip-address: true # 是否展现具体的端口号，ip地址等信息 
 feign:
   httpclient:
     enabled: true #支持httpclient开关

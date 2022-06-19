@@ -10,7 +10,6 @@ import java.util.List;
 
 @Mapper
 public interface AddressMapper extends BaseMapper<Address> {
-
 }
 
 

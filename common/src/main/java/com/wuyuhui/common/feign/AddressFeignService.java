@@ -13,4 +13,5 @@ public interface AddressFeignService {
     @GetMapping("/query/{id}")
     CommonResult<Address> queryAddressById(@PathVariable("id") int id);
 
+
 }

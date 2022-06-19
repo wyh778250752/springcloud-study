@@ -5,8 +5,10 @@
     <parent>
         <groupId>com.wuyuhui</groupId>
         <artifactId>springcloud-study</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
+        <version>${revision}</version>
     </parent>
+
+<!--    子工程与父工程的GroupId和Version一样则可以省略-->
     <groupId>com.wuyuhui</groupId>
     <artifactId>eureka-server7002</artifactId>
     <version>0.0.1-SNAPSHOT</version>
